@@ -132,26 +132,11 @@ h4 {
 }
 @media screen and (max-width: 425px) {
   .section-pages .container {
-    padding: 0;
+    margin: 1rem 0;
+    flex-direction: column;
   }
-  h4 {
-    font-size: 1rem;
-    font-weight: 700;
-    font-family: "Lora";
-    font-style: normal;
-    text-align: left;
-    line-height: 100%;
-    color: #222;
-    margin-bottom: 1rem;
-  }
-  .txt-style {
-    font-size: 0.6rem;
-    font-weight: 400;
-    font-family: "Nunito";
-    font-style: normal;
-    text-align: left;
-    line-height: 115%;
-    color: #222;
+  .section-pages .container .child {
+    margin: 1rem;
   }
   .section-pages .container .child img {
     width: 100%;

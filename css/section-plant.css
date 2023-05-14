@@ -108,8 +108,35 @@ footer {
   }
 }
 @media screen and (max-width: 430px) {
+  .animate-flower img {
+    width: 7rem;
+  }
+  .outer-box {
+    height: 10vh;
+  }
+  div.outer-box > img {
+    max-width: 9%;
+  }
+  div.animate-flower.flow-1 {
+    top: -60%;
+    left: 60%;
+  }
   div.animate-flower.flow-2 {
-    display: none;
+    top: -60%;
+    left: 14%;
+  }
+  div.animate-flower.flow-3 {
+    width: 10rem;
+    top: -20%;
+    left: 58%;
+  }
+  div.animate-flower.flow-5 {
+    top: -98%;
+    left: 20%;
+  }
+  div.animate-flower.flow-6 {
+    top: -94%;
+    left: 60%;
   }
   .outer-box > img.seven {
     display: none;

@@ -61,11 +61,15 @@ h4
 
 @media screen and (max-width: 425px) 
     .section-pages .container
-        padding: 0
-    h4
-        @include h-4($h4fs: 1rem)
-    .txt-style
-        @include txt-style($txtfs: 0.6rem)
+        
+        margin: 1rem 0
+        flex-direction: column
+        .child
+            margin: 1rem
+    // h4
+    //     @include h-4($h4fs: 1rem)
+    // .txt-style
+    //     @include txt-style($txtfs: 0.6rem)
 
     .section-pages .container .child img
         width: 100%

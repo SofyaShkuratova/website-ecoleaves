@@ -133,6 +133,11 @@ footer .foot-block .child li {
   }
 }
 @media screen and (max-width: 425px) {
+  footer {
+    gap: 1.2rem;
+    padding: 3rem;
+    flex-wrap: wrap;
+  }
   footer .foot-block .child h4 {
     font-size: 1rem;
     font-weight: 700;

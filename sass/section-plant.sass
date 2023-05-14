@@ -74,9 +74,29 @@
         &.seven-1
             display: none
 @media screen and (max-width: 430px)
-    div.animate-flower
+    .animate-flower img
+        width: 7rem
+    .outer-box
+        height: 10vh
+    div.outer-box > img
+            max-width: 9%
+    div.animate-flower 
+        &.flow-1
+            top: -60%
+            left: 60%
         &.flow-2
-            display: none
+            top: -60%
+            left: 14%
+        &.flow-3
+            width: 10rem
+            top: -20%
+            left: 58%
+        &.flow-5
+            top: -98%
+            left: 20%
+        &.flow-6
+            top: -94%
+            left: 60%
     .outer-box > img
         &.seven
             display: none
