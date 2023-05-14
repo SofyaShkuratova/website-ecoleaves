@@ -1,0 +1,86 @@
+$bg-color: #F9F5F1
+$cont-bg: #FFFEF9
+$dark-yellow: #bfb33b
+$black: #222
+$dark-green: #025050
+
+@mixin h-4($h4fs: 2.25rem, $h4clr: $black)
+    font-size: $h4fs
+    font-weight: 700
+    font-family: 'Lora'
+    font-style: normal
+    text-align: left
+    line-height: 100%
+    color: $h4clr
+    margin-bottom: 1rem
+
+@mixin head-txt()
+    font-size: 1.25rem
+    font-weight: 700
+    font-family: 'Lora'
+    font-style: normal
+    text-align: left
+    line-height: 26px
+    color: $black
+
+@mixin txt-style-lora()
+    font-size: 1.25rem
+    font-weight: 500
+    font-family: 'Lora'
+    font-style: normal
+    text-align: left
+    line-height: 26px
+    color: $black
+    
+@mixin h-2()
+    font-size: 2.5rem
+    font-weight: 500
+    font-family: 'Nunito'
+    font-style: italic
+    text-align: left
+    line-height: 55px
+    color: $black
+
+@mixin h-3()
+    font-size: 1.875rem
+    font-weight: 500
+    font-family: 'Nunito'
+    font-style: normal
+    text-align: left
+    line-height: 41px
+    color: $black
+
+@mixin btn-txt($btnfs: 1.75rem)
+    font-size: $btnfs
+    font-weight: 500
+    font-family: 'Nunito'
+    font-style: italic
+    text-align: left
+    line-height: 38px
+    color: $black
+
+@mixin txt-style($txtfs: 1.25rem, $txtclr: $black)
+    font-size: $txtfs
+    font-weight: 400
+    font-family: 'Nunito'
+    font-style: normal
+    text-align: left
+    line-height: 115%
+    color: $txtclr
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background-color: $bg-color
+
+header 
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+
+footer
+    display: flex

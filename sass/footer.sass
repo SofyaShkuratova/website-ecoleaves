@@ -1,0 +1,126 @@
+@import "style.sass"
+
+
+$white: #fff
+$gray: #9b9b9b
+
+footer
+    display: flex
+    background-color: $dark-green
+    color: $cont-bg
+    padding: 3rem
+    justify-content: space-around
+    gap: 4rem
+    .foot-block 
+        display: flex
+        flex-direction: column
+        width: fit-content
+        .child
+            
+            h4
+              @include h-4( $h4clr: $cont-bg)
+              width: max-content
+            .txt-style
+              @include txt-style($txtclr: $cont-bg)
+              width: 50%
+            li
+              list-style: none
+              @include txt-style($txtclr: $cont-bg)
+
+@media screen and (max-width: 1024px) 
+  footer
+    gap: 1rem
+    padding: 2rem 1rem
+  
+@media screen and (max-width: 960px) 
+  footer .foot-block .child h4
+    @include h-4($h4fs: 2rem, $h4clr: $cont-bg)
+  footer .foot-block .child .txt-style
+    @include txt-style($txtfs: 1rem,$txtclr: $cont-bg)
+  footer .foot-block .child li
+    @include txt-style($txtfs: 1rem,$txtclr: $cont-bg)
+
+@media screen and (max-width: 768px) 
+  footer .foot-block .child h4
+    @include h-4($h4fs: 1.4rem, $h4clr: $cont-bg)
+  footer .foot-block .child .txt-style
+    @include txt-style($txtfs: 1rem,$txtclr: $cont-bg)
+  footer .foot-block .child li
+    @include txt-style($txtfs: 1rem,$txtclr: $cont-bg)
+
+@media screen and (max-width: 425px) 
+  footer .foot-block .child h4
+    @include h-4($h4fs: 1rem, $h4clr: $cont-bg)
+  footer .foot-block .child .txt-style
+    @include txt-style($txtfs: 0.6rem,$txtclr: $cont-bg)
+  footer .foot-block .child li
+    @include txt-style($txtfs: 0.6rem,$txtclr: $cont-bg)
+.form__group 
+  position: relative
+  padding: 15px 0 0
+  margin-top: 10px
+  width: 50%
+
+
+.form__field 
+  font-family: inherit
+  width: 100%
+  border: 0
+  border-bottom: 2px solid $gray
+  outline: 0
+  font-size: 1.3rem
+  color: $white
+  padding: 7px 0
+  background: transparent
+  transition: border-color 0.2s
+
+  &::placeholder 
+    color: transparent
+  
+
+  &:placeholder-shown ~ .form__label 
+    font-size: 1.3rem
+    cursor: text
+    top: 20px
+  
+
+.form__label 
+  position: absolute
+  top: 0
+  display: block
+  transition: 0.2s
+  font-size: 1rem
+  color: $gray
+
+
+.form__field:focus 
+  ~ .form__label 
+    position: absolute
+    top: 0
+    display: block
+    transition: 0.2s
+    font-size: 1rem
+    color: $dark-green
+    font-weight:700    
+  
+  padding-bottom: 6px  
+  font-weight: 700
+  border-width: 3px
+  border-image: linear-gradient(to right, $dark-green,$dark-green)
+  border-image-slice: 1
+
+/* reset input */
+.form__field
+  &:required,&:invalid  box-shadow:none 
+
+/* demo */
+// body 
+//   font-family: 'Poppins', sans-serif 
+//   display: flex
+//   flex-direction: column
+//   justify-content: center
+//   align-items: center
+//   min-height: 100vh
+//   font-size: 1.5rem
+//   background-color:#222222
+

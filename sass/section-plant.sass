@@ -1,0 +1,121 @@
+@import "style.sass"
+
+.shelf-area
+    display: flex
+    flex-direction: column
+    align-items: center
+    cursor: url('/img/cursor.svg'), auto
+    width: 100%
+    height: max-content
+    padding: 0 2rem
+
+.outer-box
+    position: relative
+    display: block
+    border: solid 5px #bfb33b
+    margin: 1rem 0
+    width: 100%
+    max-width: 1440px
+    height: 24vh
+    
+
+.animate-flower
+    position: relative
+    width: fit-content
+    height: 100%
+    display: inline-block
+
+    img
+        position: absolute
+        z-index: 1
+        position: absolute
+        width: 14rem
+    &.flow-1
+        left: 24%
+        top: -7%
+    &.flow-2
+        left: 53%
+        top: -10%
+    &.flow-3
+        width: 17rem
+        left: 39%
+        top: 0%
+    &.flow-4
+        left: 48%
+        top: 0%
+    &.flow-5
+        left: 23%
+        top: 0%
+    &:hover img:last-child
+        animation-duration: 600ms
+        animation-fill-mode: both
+        animation-name: contre
+        animation-iteration-count: infinite
+        transform-origin: bottom
+
+
+@media screen and (max-width: 960px) 
+    div.animate-flower
+        &.flow-4
+            left: 30%
+        &.flow-5
+            left: 3%
+@media screen and (max-width: 710px) 
+    div.animate-flower
+        &.flow-4
+            display: none
+        &.flow-5
+            left: 3%
+    .outer-box > img
+        &.eight
+            display: none
+        &.five
+            display: none
+        &.seven-1
+            display: none
+@media screen and (max-width: 430px)
+    div.animate-flower
+        &.flow-2
+            display: none
+    .outer-box > img
+        &.seven
+            display: none
+
+@keyframes contre 
+    0%, 33%, 100% 
+        animation-timing-function: cubic-bezier(.17,.67,.79,1.83)
+    33% 
+        transform: translateY(4px) rotate(-2deg)
+    66% 
+        transform: translateY(0px) rotate(4deg)
+    
+     
+
+.outer-box > img 
+    display: inline-block
+    max-width: 100%
+    position: absolute
+    bottom: 0
+
+    &.base
+        left: 0
+    &.one
+        left: 10%
+    &.two
+        left: 50%
+    &.three
+        left: 18%
+    &.four
+        left: 37%
+    &.five
+        left: 87%
+    &.six
+        right: 0
+    &.seven
+        left: 56%
+    &.eight
+        left: 76%
+    &.nine
+        left: 16%
+    &.ten
+        left: 65%

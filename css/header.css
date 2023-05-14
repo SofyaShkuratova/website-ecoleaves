@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F9F5F1;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+}
+
+nav {
+  width: 100%;
+  background-color: #F9F5F1;
+}
+nav .nav-container {
+  background-color: #F9F5F1;
+  align-items: center;
+  padding: 0.3rem 2rem;
+  width: max-width;
+  height: auto;
+  border-bottom: 1px solid #222;
+  border-top: 1px solid #222;
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-container .title {
+  font-size: 2rem;
+  color: #222;
+  font-family: "Josefin Sans";
+}
+nav .nav-container .logo {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+nav .nav-container .cont {
+  display: flex;
+  gap: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+nav .nav-container .cont .child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: block;
+}
+nav .nav-container .cont .child .txt {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Nunito";
+  font-style: normal;
+  text-align: left;
+  line-height: 115%;
+  color: #222;
+}
+nav .nav-container .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav .nav-container .cont {
+    display: none;
+  }
+  nav .nav-container .icon {
+    display: block;
+  }
+  nav div.nav-container {
+    position: relative;
+  }
+  nav .nav-container .responsive {
+    left: 0;
+    top: 100%;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: #F9F5F1;
+    z-index: 100;
+    border-bottom: 1px solid #222;
+    border-top: 1px solid #222;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+}
+a {
+  text-decoration: none;
+  color: #222;
+}

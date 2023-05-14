@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F9F5F1;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+}
+
+.shelf-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: url("/img/cursor.svg"), auto;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 0 2rem;
+}
+
+.outer-box {
+  position: relative;
+  display: block;
+  border: solid 5px #bfb33b;
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 1440px;
+  height: 24vh;
+}
+
+.animate-flower {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  display: inline-block;
+}
+.animate-flower img {
+  position: absolute;
+  z-index: 1;
+  position: absolute;
+  width: 14rem;
+}
+.animate-flower.flow-1 {
+  left: 24%;
+  top: -7%;
+}
+.animate-flower.flow-2 {
+  left: 53%;
+  top: -10%;
+}
+.animate-flower.flow-3 {
+  width: 17rem;
+  left: 39%;
+  top: 0%;
+}
+.animate-flower.flow-4 {
+  left: 48%;
+  top: 0%;
+}
+.animate-flower.flow-5 {
+  left: 23%;
+  top: 0%;
+}
+.animate-flower:hover img:last-child {
+  animation-duration: 600ms;
+  animation-fill-mode: both;
+  animation-name: contre;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+
+@media screen and (max-width: 960px) {
+  div.animate-flower.flow-4 {
+    left: 30%;
+  }
+  div.animate-flower.flow-5 {
+    left: 3%;
+  }
+}
+@media screen and (max-width: 710px) {
+  div.animate-flower.flow-4 {
+    display: none;
+  }
+  div.animate-flower.flow-5 {
+    left: 3%;
+  }
+  .outer-box > img.eight {
+    display: none;
+  }
+  .outer-box > img.five {
+    display: none;
+  }
+  .outer-box > img.seven-1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 430px) {
+  div.animate-flower.flow-2 {
+    display: none;
+  }
+  .outer-box > img.seven {
+    display: none;
+  }
+}
+@keyframes contre {
+  0%, 33%, 100% {
+    animation-timing-function: cubic-bezier(0.17, 0.67, 0.79, 1.83);
+  }
+  33% {
+    transform: translateY(4px) rotate(-2deg);
+  }
+  66% {
+    transform: translateY(0px) rotate(4deg);
+  }
+}
+.outer-box > img {
+  display: inline-block;
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.outer-box > img.base {
+  left: 0;
+}
+.outer-box > img.one {
+  left: 10%;
+}
+.outer-box > img.two {
+  left: 50%;
+}
+.outer-box > img.three {
+  left: 18%;
+}
+.outer-box > img.four {
+  left: 37%;
+}
+.outer-box > img.five {
+  left: 87%;
+}
+.outer-box > img.six {
+  right: 0;
+}
+.outer-box > img.seven {
+  left: 56%;
+}
+.outer-box > img.eight {
+  left: 76%;
+}
+.outer-box > img.nine {
+  left: 16%;
+}
+.outer-box > img.ten {
+  left: 65%;
+}

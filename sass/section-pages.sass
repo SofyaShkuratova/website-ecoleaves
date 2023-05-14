@@ -1,0 +1,79 @@
+@import "style.sass"
+
+.section-pages
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    height: max-content
+    padding: 0 2rem
+
+    .container
+        display: flex
+        padding:  0 2rem
+        align-items: center
+        width: fit-content
+        margin: 1rem 0
+
+        .child
+            width: fit-content
+            display: flex
+            flex-direction: column
+            align-items: center
+            img
+                width: 70%
+            .cont-wh
+                background-color: $cont-bg
+                padding: 4rem
+                width: 60%
+h4
+    @include h-4()
+.txt-style
+    @include txt-style()
+.button
+    margin-top: -1rem
+    background: $cont-bg
+    border: 1px solid $black    
+    box-shadow: 8px 8px 0px $dark-yellow
+    width: fit-content
+    padding: 1rem
+    a
+        @include btn-txt()
+
+@media screen and (max-width: 1024px) 
+    .section-pages .container .child .cont-wh
+        width: 97%
+    .section-pages .container .child img
+        width: 87%
+
+@media screen and (max-width: 768px) 
+    .section-pages .container
+        padding: 0
+    h4
+        @include h-4($h4fs: 1.8rem)
+    .txt-style
+        @include txt-style($txtfs: 1rem)
+
+    .section-pages .container .child img
+        width: 100%
+    .section-pages .container .child .cont-wh
+        padding: 2rem
+
+@media screen and (max-width: 425px) 
+    .section-pages .container
+        padding: 0
+    h4
+        @include h-4($h4fs: 1rem)
+    .txt-style
+        @include txt-style($txtfs: 0.6rem)
+
+    .section-pages .container .child img
+        width: 100%
+    .section-pages .container .child .cont-wh
+        padding: 1rem
+
+    .button 
+        margin: -0.5rem
+        padding: 0.5rem
+        a
+            @include btn-txt($btnfs: 1rem)

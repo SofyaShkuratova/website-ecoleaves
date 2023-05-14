@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F9F5F1;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+}
+
+.section-pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 0 2rem;
+}
+.section-pages .container {
+  display: flex;
+  padding: 0 2rem;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1rem 0;
+}
+.section-pages .container .child {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-pages .container .child img {
+  width: 70%;
+}
+.section-pages .container .child .cont-wh {
+  background-color: #FFFEF9;
+  padding: 4rem;
+  width: 60%;
+}
+
+h4 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  font-family: "Lora";
+  font-style: normal;
+  text-align: left;
+  line-height: 100%;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.txt-style {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Nunito";
+  font-style: normal;
+  text-align: left;
+  line-height: 115%;
+  color: #222;
+}
+
+.button {
+  margin-top: -1rem;
+  background: #FFFEF9;
+  border: 1px solid #222;
+  box-shadow: 8px 8px 0px #bfb33b;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+}
+.button a {
+  font-size: 1.75rem;
+  font-weight: 500;
+  font-family: "Nunito";
+  font-style: italic;
+  text-align: left;
+  line-height: 38px;
+  color: #222;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-pages .container .child .cont-wh {
+    width: 97%;
+  }
+  .section-pages .container .child img {
+    width: 87%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-pages .container {
+    padding: 0;
+  }
+  h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "Lora";
+    font-style: normal;
+    text-align: left;
+    line-height: 100%;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+  .txt-style {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Nunito";
+    font-style: normal;
+    text-align: left;
+    line-height: 115%;
+    color: #222;
+  }
+  .section-pages .container .child img {
+    width: 100%;
+  }
+  .section-pages .container .child .cont-wh {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .section-pages .container {
+    padding: 0;
+  }
+  h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Lora";
+    font-style: normal;
+    text-align: left;
+    line-height: 100%;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+  .txt-style {
+    font-size: 0.6rem;
+    font-weight: 400;
+    font-family: "Nunito";
+    font-style: normal;
+    text-align: left;
+    line-height: 115%;
+    color: #222;
+  }
+  .section-pages .container .child img {
+    width: 100%;
+  }
+  .section-pages .container .child .cont-wh {
+    padding: 1rem;
+  }
+  .button {
+    margin: -0.5rem;
+    padding: 0.5rem;
+  }
+  .button a {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Nunito";
+    font-style: italic;
+    text-align: left;
+    line-height: 38px;
+    color: #222;
+  }
+}

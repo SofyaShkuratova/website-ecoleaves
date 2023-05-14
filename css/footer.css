@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F9F5F1;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  background-color: #025050;
+  color: #FFFEF9;
+  padding: 3rem;
+  justify-content: space-around;
+  gap: 4rem;
+}
+footer .foot-block {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .foot-block .child h4 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  font-family: "Lora";
+  font-style: normal;
+  text-align: left;
+  line-height: 100%;
+  color: #FFFEF9;
+  margin-bottom: 1rem;
+  width: -moz-max-content;
+  width: max-content;
+}
+footer .foot-block .child .txt-style {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Nunito";
+  font-style: normal;
+  text-align: left;
+  line-height: 115%;
+  color: #FFFEF9;
+  width: 50%;
+}
+footer .foot-block .child li {
+  list-style: none;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Nunito";
+  font-style: normal;
+  text-align: left;
+  line-height: 115%;
+  color: #FFFEF9;
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  footer .foot-block .child h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Lora";
+    font-style: normal;
+    text-align: left;
+    line-height: 100%;
+    color: #FFFEF9;
+    margin-bottom: 1rem;
+  }
+  footer .foot-block .child .txt-style {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Nunito";
+    font-style: normal;
+    text-align: left;
+    line-height: 115%;
+    color: #FFFEF9;
+  }
+  footer .foot-block .child li {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Nunito";
+    font-style: normal;
+    text-align: left;
+    line-height: 115%;
+    color: #FFFEF9;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .foot-block .child h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: "Lora";
+    font-style: normal;
+    text-align: left;
+    line-height: 100%;
+    color: #FFFEF9;
+    margin-bottom: 1rem;
+  }
+  footer .foot-block .child .txt-style {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Nunito";
+    font-style: normal;
+    text-align: left;
+    line-height: 115%;
+    color: #FFFEF9;
+  }
+  footer .foot-block .child li {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Nunito";
+    font-style: normal;
+    text-align: left;
+    line-height: 115%;
+    color: #FFFEF9;
+  }
+}
+@media screen and (max-width: 425px) {
+  footer .foot-block .child h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Lora";
+    font-style: normal;
+    text-align: left;
+    line-height: 100%;
+    color: #FFFEF9;
+    margin-bottom: 1rem;
+  }
+  footer .foot-block .child .txt-style {
+    font-size: 0.6rem;
+    font-weight: 400;
+    font-family: "Nunito";
+    font-style: normal;
+    text-align: left;
+    line-height: 115%;
+    color: #FFFEF9;
+  }
+  footer .foot-block .child li {
+    font-size: 0.6rem;
+    font-weight: 400;
+    font-family: "Nunito";
+    font-style: normal;
+    text-align: left;
+    line-height: 115%;
+    color: #FFFEF9;
+  }
+}
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::-moz-placeholder {
+  color: transparent;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:-moz-placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  -o-border-image: linear-gradient(to right, #025050, #025050);
+     border-image: linear-gradient(to right, #025050, #025050);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #025050;
+  font-weight: 700;
+}
+
+/* reset input */
+/* demo */
