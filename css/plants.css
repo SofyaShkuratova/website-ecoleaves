@@ -45,6 +45,7 @@ footer {
   color: #222;
   border: none;
   background: none;
+  text-decoration: underline;
 }
 .catalog_plant .filter_menu {
   display: flex;

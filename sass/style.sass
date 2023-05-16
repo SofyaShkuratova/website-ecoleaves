@@ -23,14 +23,14 @@ $dark-green: #025050
     line-height: 26px
     color: $black
 
-@mixin txt-style-lora()
+@mixin txt-style-lora($clrtxtlora: $black, $style-lora:normal, $wlora: 500)
     font-size: 1.25rem
-    font-weight: 500
+    font-weight: $wlora
     font-family: 'Lora'
-    font-style: normal
+    font-style: $style-lora
     text-align: left
     line-height: 26px
-    color: $black
+    color: $clrtxtlora
     
 @mixin h-2()
     font-size: 2.5rem
@@ -58,6 +58,7 @@ $dark-green: #025050
     text-align: left
     line-height: 38px
     color: $black
+    text-align: center
 
 @mixin txt-style($txtfs: 1.25rem, $txtclr: $black)
     font-size: $txtfs
