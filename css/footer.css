@@ -23,8 +23,8 @@ footer {
   display: flex;
   background-color: #025050;
   color: #FFFEF9;
-  padding: 3rem;
-  justify-content: space-around;
+  padding: 3rem 5rem;
+  justify-content: space-evenly;
   gap: 4rem;
 }
 footer .foot-block {

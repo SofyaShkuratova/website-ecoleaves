@@ -23,6 +23,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 3rem 0;
 }
 .catalog_plant .title_head {
   margin: 3rem 0;
@@ -83,6 +84,126 @@ footer {
   color: #222;
 }
 
+@media screen and (max-width: 1024px) {
+  .catalog_plant .filter_menu ul li {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: "Nunito";
+    font-style: normal;
+    text-align: left;
+    line-height: 41px;
+    color: #222;
+  }
+  .catalog_plant .filter_menu input[type=search] {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: "Nunito";
+    font-style: normal;
+    text-align: left;
+    line-height: 41px;
+    color: #222;
+  }
+  .catalog li div.title_plant {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: "Nunito";
+    font-style: italic;
+    text-align: left;
+    line-height: 38px;
+    color: #222;
+  }
+  ul.catalog li {
+    justify-content: flex-end;
+    gap: 0px;
+    width: 250px;
+  }
+  .catalog li .img_plant {
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  .catalog_plant .title_head .sort .sort_but {
+    font-size: 1.4rem;
+  }
+  div.head {
+    font-size: 2rem;
+  }
+  .catalog_plant .filter_menu ul li {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Nunito";
+    font-style: normal;
+    text-align: left;
+    line-height: 41px;
+    color: #222;
+  }
+  .catalog_plant .filter_menu input[type=search] {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Nunito";
+    font-style: normal;
+    text-align: left;
+    line-height: 41px;
+    color: #222;
+  }
+  .catalog li div.title_plant {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Nunito";
+    font-style: italic;
+    text-align: left;
+    line-height: 38px;
+    color: #222;
+  }
+  .catalog_plant .filter_menu {
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 425px) {
+  .catalog_plant .title_head .sort .sort_but {
+    font-size: 1rem;
+  }
+  div.head {
+    font-size: 1.6rem;
+  }
+  .catalog_plant .filter_menu ul li {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Nunito";
+    font-style: normal;
+    text-align: left;
+    line-height: 41px;
+    color: #222;
+  }
+  .catalog_plant .filter_menu input[type=search] {
+    width: 20%;
+    margin: 0.6rem;
+    padding: 0.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Nunito";
+    font-style: normal;
+    text-align: left;
+    line-height: 41px;
+    color: #222;
+  }
+  ul.catalog li {
+    justify-content: flex-end;
+    gap: 0px;
+    width: 176px;
+    margin: 0.6rem;
+  }
+  .catalog li div.title_plant {
+    line-height: 24px;
+    font-size: 0.9rem;
+  }
+  .catalog_plant .filter_menu {
+    padding: 0.4rem 0;
+  }
+  ul#paginated-list {
+    margin: 1rem 0;
+  }
+}
 .head {
   font-size: 2.5rem;
   font-weight: 500;
@@ -116,6 +237,7 @@ footer {
 }
 .catalog li .title_plant {
   display: flex;
+  text-align: center;
   width: 100%;
   justify-content: center;
   padding: 1rem;
