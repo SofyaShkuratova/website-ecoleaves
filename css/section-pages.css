@@ -73,15 +73,6 @@ h4 {
   color: #222;
 }
 
-.button {
-  margin-top: -1rem;
-  background: #FFFEF9;
-  border: 1px solid #222;
-  box-shadow: 8px 8px 0px #bfb33b;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 1rem;
-}
 .button a {
   font-size: 1.75rem;
   font-weight: 500;

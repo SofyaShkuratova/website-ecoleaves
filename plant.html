@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/plants.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/pagination.css">
+
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <title>Plant</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="nav-block logo">
+                    <a href="index.html"><img src="img/logo.svg" alt="logotype"></a>
+                </div>
+                <div class="nav-block title">
+                    EcoLeaves
+                </div>
+                <div class="nav-block cont" id="myTopnav">
+                    <div class="child">
+                        <div class="txt"><a href="#">Растения</a></div>
+                        <div class="line">
+                            <img src="img/plant-line.png" alt="">
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="txt"> <a href="#">Уход</a> </div>
+                        <div class="line">
+                            <img src="img/care-line.png" alt="">
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="txt"><a href="#">Блог</a></div>
+                        <div class="line">
+                            <img src="img/blog-line.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="icon" onclick="myFunction()">
+                        <a href="#"><img src="img/burger.svg" alt=""></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="catalog_plant">
+        <div class="title_head">
+             <div class="head button">
+                Растения
+            </div>
+            <div class="sort">
+                <button class="sort_but">Популярные растения</button>
+                <button class="sort_but">От А до Я</button>
+                <button class="sort_but">По сложности ухода</button>
+            </div>
+        </div>
+        <div class="filter_menu">
+            <ul>
+                <li>Забота</li>
+                <li>Функции</li>
+                <li>Тип растения</li>
+                <li>Листья</li>
+            </ul>
+            
+            <input type="search" name="search" id="search" placeholder="Поиск ...">
+        </div>
+        <!-- <div class="catalog"> -->
+        <ul id="paginated-list" data-current-page="1" aria-live="polite" class="catalog">
+            <li class="plant_card">
+                <div class="title_plant">Орхидея обычная</div>
+                <div class="img_plant"><img src="img/plants/1.png" alt=""></div>
+            </li>
+            <li class="plant_card">
+                <div class="title_plant">Нервное растение</div>
+                <div class="img_plant"><img src="img/plants/2.png" alt=""></div>
+            </li>
+            <li class="plant_card">
+                <div class="title_plant">Кротон</div>
+                <div class="img_plant"><img src="img/plants/3.png" alt=""></div>
+            </li>
+            <li class="plant_card">
+                <div class="title_plant">Карандаш кактус</div>
+                <div class="img_plant"><img src="img/plants/4.png" alt=""></div>
+            </li>
+            <li class="plant_card">
+                <div class="title_plant">Хвост ослика</div>
+                <div class="img_plant"><img src="img/plants/5.png" alt=""></div>
+            </li>
+            <li class="plant_card">
+                <div class="title_plant">Райская птица</div>
+                <div class="img_plant"><img src="img/plants/6.png" alt=""></div>
+            </li>
+            <li class="plant_card">
+                <div class="title_plant">Строманте Триостар</div>
+                <div class="img_plant"><img src="img/plants/7.png" alt=""></div>
+            </li>
+            <li class="plant_card">
+                <div class="title_plant">Строманте Триостар</div>
+                <div class="img_plant"><img src="img/plants/7.png" alt=""></div>
+            </li>
+            <li class="plant_card">
+                <div class="title_plant">Строманте Триостар</div>
+                <div class="img_plant"><img src="img/plants/7.png" alt=""></div>
+            </li>
+            <li class="plant_card">
+                <div class="title_plant">Строманте Триостар</div>
+                <div class="img_plant"><img src="img/plants/7.png" alt=""></div>
+            </li>
+        </ul>
+        <!-- </div> -->
+        <nav class="pagination-container">
+            <button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page">
+              &lt;
+            </button>
+        
+            <div id="pagination-numbers">
+        
+            </div>
+        
+            <button class="pagination-button" id="next-button" aria-label="Next page" title="Next page">
+              &gt;
+            </button>
+        </nav>
+    </section>
+    <footer>
+        <div class="foot-block">
+            <div class="child">
+                <h4>
+                    Свяжитесь с нами
+                </h4>
+                <div class="txt-style">
+                    Подпишитесь на наши приятные письма. Не волнуйтесь — в отличие от растений, мы знаем, что электронной почты бывает слишком много.
+                </div>
+            </div>
+            <div class="child">
+                <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Name" name="name" id="name" required />
+                <label for="name" class="form__label">Email</label>
+                </div>
+            </div>
+        </div>
+        <div class="foot-block">
+            <div class="child">
+                <h4>
+                    Меню
+                </h4>
+            </div>
+            <div class="child">
+                <ul>
+                    <li>Растения</li>
+                    <li>Уход</li>
+                    <li>Блог</li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot-block">
+            <div class="child">
+                <h4>
+                    Соц. сети
+                </h4>
+            </div>
+            <div class="child">
+                <ul>
+                    <li>Instagram</li>
+                    <li>Pinterest</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot-block">
+            <div class="child">
+                <h4>
+                    Свяжитесь 
+                </h4>
+            </div>
+            <div class="child">
+                <ul>
+                    <li>ecoleaves@mail.com</li>
+                    <li>ecogetic@mail.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/pagination.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F9F5F1;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+}
+
+.button {
+  margin-top: -1rem;
+  background: #FFFEF9;
+  border: 1px solid #222;
+  box-shadow: 8px 8px 0px #bfb33b;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem;
+}

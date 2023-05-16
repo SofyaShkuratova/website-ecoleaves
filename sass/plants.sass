@@ -1,0 +1,78 @@
+@import "style.sass"
+
+.catalog_plant
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .title_head
+        margin: 3rem 0
+        display: flex
+        align-items: center
+        gap: 3rem
+
+        .sort
+            display: flex
+            flex-direction: column
+            .sort_but
+                @include h-3()
+                border: none
+                background: none
+    .filter_menu
+        display: flex
+        width: 100%
+        justify-content: space-around
+        background-color: $cont-bg
+        padding: 1.2rem 0
+        align-items: center
+        ul 
+            display: flex
+            width: 70%
+            justify-content: space-evenly
+            li
+                display: block
+                list-style: none
+                @include h-3()
+        
+        input[type=search]
+            height: 3rem
+            border: none
+            background-color: $bg-color
+            padding: 0 2rem
+            @include h-3()
+            
+                
+
+
+.head
+    @include h-2()
+
+.catalog
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    
+    li
+        display: flex
+        flex-direction: column-reverse
+        align-items: center
+        width: 400px
+        margin: 2rem
+        background-color: $cont-bg
+        gap: 20px
+        border: 2px solid $black
+        .img_plant 
+            width: 100%
+            img
+                width: 100%
+        .title_plant
+            display: flex
+            width: 100%
+            justify-content: center
+            padding: 1rem
+            border-top: 2px solid $black
+            @include btn-txt()
+        
+        &:hover
+            box-shadow: 10px 10px 0px $dark-yellow
+    
