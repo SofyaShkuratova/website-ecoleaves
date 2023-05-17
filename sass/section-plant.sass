@@ -32,7 +32,7 @@
         width: 14rem
     &.flow-1
         left: 24%
-        top: -7%
+        top: -17%
     &.flow-2
         left: 53%
         top: -10%
@@ -42,17 +42,35 @@
         top: 0%
     &.flow-4
         left: 48%
-        top: 0%
+        top: -20%
     &.flow-5
         left: 23%
         top: 0%
+    &.flow-6
+        // left: 23%
+        top: -20%
     &:hover img:last-child
         animation-duration: 600ms
         animation-fill-mode: both
         animation-name: contre
         animation-iteration-count: infinite
         transform-origin: bottom
-
+@media screen and (max-width: 1024px) 
+    div.animate-flower
+        &.flow-1
+            top: -35%
+        &.flow-2
+            top: -27%
+        &.flow-3
+            width: 17rem
+            left: 39%
+            top: 0%
+        &.flow-4
+            top: -40%
+        &.flow-5
+            top: -39%
+        &.flow-6
+            top: -37%
 
 @media screen and (max-width: 960px) 
     div.animate-flower

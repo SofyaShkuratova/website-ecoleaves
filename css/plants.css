@@ -112,6 +112,7 @@ footer {
     text-align: left;
     line-height: 38px;
     color: #222;
+    text-align: center;
   }
   ul.catalog li {
     justify-content: flex-end;
@@ -155,6 +156,7 @@ footer {
     text-align: left;
     line-height: 38px;
     color: #222;
+    text-align: center;
   }
   .catalog_plant .filter_menu {
     justify-content: flex-end;
@@ -250,6 +252,7 @@ footer {
   text-align: left;
   line-height: 38px;
   color: #222;
+  text-align: center;
 }
 .catalog li:hover {
   box-shadow: 10px 10px 0px #bfb33b;
