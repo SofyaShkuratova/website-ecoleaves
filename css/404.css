@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F9F5F1;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F9F5F1;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+}
+
+.button {
+  margin-top: -1rem;
+  background: #FFFEF9;
+  border: 1px solid #222;
+  box-shadow: 8px 8px 0px #bfb33b;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem;
+  transition: all 0.5s;
+}
+.button:hover {
+  transition: all 0.5s;
+  box-shadow: -8px -8px 0px #bfb33b;
+}
+
+.error-message {
+  margin: 3rem 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 2.6rem;
+  align-items: center;
+  transition: all 0.5s;
+  transform: scale(1);
+}
+.error-message:hover img {
+  transition: all 0.5s;
+  transform: scale(1.2);
+}
+.error-message img {
+  width: 26%;
+  transition: all 0.5s;
+  cursor: url("/img/cursor.svg"), auto;
+}
+
+h4 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  font-family: "Lora";
+  font-style: normal;
+  text-align: left;
+  line-height: 100%;
+  color: #222;
+  margin-bottom: 1rem;
+  width: 40%;
+  text-align: center;
+}
+
+.button {
+  font-size: 1.75rem;
+  font-weight: 500;
+  font-family: "Nunito";
+  font-style: italic;
+  text-align: left;
+  line-height: 38px;
+  color: #222;
+  text-align: center;
+}

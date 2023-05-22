@@ -29,4 +29,9 @@ footer {
   height: -moz-fit-content;
   height: fit-content;
   padding: 1rem;
+  transition: all 0.5s;
+}
+.button:hover {
+  transition: all 0.5s;
+  box-shadow: -8px -8px 0px #bfb33b;
 }

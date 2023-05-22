@@ -11,7 +11,7 @@
         display: flex
         align-items: center
         gap: 3rem
-        // width: 200px
+        // width: 250px
 
         .sort
             display: flex
@@ -104,33 +104,63 @@
 .catalog
     display: flex
     flex-wrap: wrap
+    margin: 2rem 5rem
     justify-content: center
-    
-    li
-        display: flex
-        flex-direction: column-reverse
-        align-items: center
-        width: 400px
-        margin: 2rem
-        background-color: $cont-bg
-        gap: 20px
-        border: 2px solid $black
-        transition: all 0.5s
-        
-        .img_plant 
-            width: 100%
-            img
-                width: 100%
-        .title_plant
+    width: 100%
+    .row
+        &:first-child
             display: flex
-            text-align: center
             width: 100%
             justify-content: center
-            padding: 1rem
-            border-top: 2px solid $black
-            @include btn-txt()
+            gap: 6rem
+        &:nth-child(2)
+            display: none
+            
+    .col
+        display: flex
+        flex-direction: column
+        gap: 6rem
+        margin-right: 4rem
+
+    .sec
+        margin-top: 12rem
+    a
+        display: flex
+        width: fit-content
+    .plant_card:hover
+        img
+            object-fit: cover
+
+
+    li
+        width: fit-content
+        display: flex
+        width: 450px
+        flex-direction: column-reverse
+
+        .img_plant 
+            width: 100%
+            transition: all 0.9s
+            img
+                transition: all 0.9s
+                width: 100%
+                object-fit: fill
+                filter: grayscale(100%)
+        .title_plant
+            @include h-4()
+        .pre-title
+            @include h-3($h3clr: $dark-green)
+    
+        &:hover 
+            img
+                transition: all 0.5s
+                transform: scale(0.95)
+                filter: grayscale(0%)
+            .img_plant
+                // background: rgba(0, 0, 0, 1)
+                // transform: scale(0.9)
+                transition: all 0.5s 
+                    
         
-        &:hover
-            box-shadow: 10px 10px 0px $dark-yellow
-            transition: all 0.5s
+
     

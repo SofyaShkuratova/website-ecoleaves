@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог</title>
 
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/plants.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/care.css">
     <link rel="stylesheet" href="css/pagination.css">
+    <!-- <link rel="stylesheet" href="css/plants.css"> -->
 
     <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
-    <title>Plant</title>
 </head>
 <body>
     <header>
@@ -52,75 +53,114 @@
             </div>
         </nav>
     </header>
+
     <section class="catalog_plant">
         <div class="title_head">
              <div class="head button">
-                Растения
+                Блог
             </div>
             <div class="sort">
-                <button class="sort_but">Популярные растения</button>
+                <button class="sort_but">Последние новости</button>
                 <button class="sort_but">От А до Я</button>
-                <button class="sort_but">По сложности ухода</button>
+                <button class="sort_but">Декорации и цветы</button>
             </div>
         </div>
-        <div class="filter_menu">
-            <ul>
-                <li>Забота</li>
-                <li>Функции</li>
-                <li>Тип растения</li>
-                <li>Листья</li>
-            </ul>
-            
-            <input type="search" name="search" id="search" placeholder="Поиск ...">
-        </div>
-        <!-- <div class="catalog"> -->
+        
         <ul id="paginated-list" data-current-page="1" aria-live="polite" class="catalog">
-            <a href="moth-orchid.html">
-                <li class="plant_card">
-                    <div class="title_plant">Орхидея обычная</div>
-                    <div class="img_plant"><img src="img/plants/1.png" alt=""></div>
-                </li>
-            </a>
-            <a href="#">
-                <li class="plant_card">
-                    <div class="title_plant">Нервное растение</div>
-                    <div class="img_plant"><img src="img/plants/2.png" alt=""></div>
-                </li>
-            </a>
-            <a href="#">
-                <li class="plant_card">
-                    <div class="title_plant">Кротон</div>
-                    <div class="img_plant"><img src="img/plants/3.png" alt=""></div>
-                </li>
-            </a>
-            <li class="plant_card">
-                <div class="title_plant">Карандаш кактус</div>
-                <div class="img_plant"><img src="img/plants/4.png" alt=""></div>
-            </li>
-            <li class="plant_card">
-                <div class="title_plant">Хвост ослика</div>
-                <div class="img_plant"><img src="img/plants/5.png" alt=""></div>
-            </li>
-            <li class="plant_card">
-                <div class="title_plant">Райская птица</div>
-                <div class="img_plant"><img src="img/plants/6.png" alt=""></div>
-            </li>
-            <li class="plant_card">
-                <div class="title_plant">Строманте Триостар</div>
-                <div class="img_plant"><img src="img/plants/7.png" alt=""></div>
-            </li>
-            <li class="plant_card">
-                <div class="title_plant">Строманте Триостар</div>
-                <div class="img_plant"><img src="img/plants/7.png" alt=""></div>
-            </li>
-            <li class="plant_card">
-                <div class="title_plant">Строманте Триостар</div>
-                <div class="img_plant"><img src="img/plants/7.png" alt=""></div>
-            </li>
-            <li class="plant_card">
-                <div class="title_plant">Строманте Триостар</div>
-                <div class="img_plant"><img src="img/plants/7.png" alt=""></div>
-            </li>
+            <div class="row">
+                <div class="col">
+                    <a href="#">
+                        <li class="plant_card">
+                            <div class="title_plant">Уютный дом с растениями</div>
+                            <div class="img_plant"><img src="img/care/1.png" alt=""></div>
+                            <div class="pre-title">Основы растений</div>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="plant_card">
+                            <div class="title_plant">Нервное растение</div>
+                            <div class="img_plant"><img src="img/care/2.png" alt=""></div>
+                            <div class="pre-title">Основы растений</div>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="plant_card">
+                            <div class="title_plant">Кротон</div>
+                            <div class="img_plant"><img src="img/care/3.png" alt=""></div>
+                            <div class="pre-title">Основы растений</div>
+                        </li>
+                    </a>
+                </div>
+                
+                <div class="col sec">
+                    <a href="#">
+                        <li class="plant_card">
+                            <div class="title_plant">Орхидея обычная</div>
+                            <div class="img_plant"><img src="img/care/4.png" alt=""></div>
+                            <div class="pre-title">Основы растений</div>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="plant_card">
+                            <div class="title_plant">Нервное растение</div>
+                            <div class="img_plant"><img src="img/care/5.png" alt=""></div>
+                            <div class="pre-title">Основы растений</div>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="plant_card">
+                            <div class="title_plant">Кротон</div>
+                            <div class="img_plant"><img src="img/care/6.png" alt=""></div>
+                        </li>
+                    </a>
+                </div>
+            </div>
+            
+
+            <div class="row">
+                <div class="col">
+                    <a href="#">
+                        <li class="plant_card">
+                            <div class="title_plant">Орхидея обычная</div>
+                            <div class="img_plant"><img src="img/care/7.png" alt=""></div>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="plant_card">
+                            <div class="title_plant">Нервное растение</div>
+                            <div class="img_plant"><img src="img/care/8.png" alt=""></div>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="plant_card">
+                            <div class="title_plant">Кротон</div>
+                            <div class="img_plant"><img src="img/care/9.png" alt=""></div>
+                        </li>
+                    </a>
+                </div>
+    
+                <div class="col">
+                    <a href="#">
+                        <li class="plant_card">
+                            <div class="title_plant">Орхидея обычная</div>
+                            <div class="img_plant"><img src="img/care/7.png" alt=""></div>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="plant_card">
+                            <div class="title_plant">Нервное растение</div>
+                            <div class="img_plant"><img src="img/care/8.png" alt=""></div>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="plant_card">
+                            <div class="title_plant">Кротон</div>
+                            <div class="img_plant"><img src="img/care/9.png" alt=""></div>
+                        </li>
+                    </a>
+                </div>
+            </div>
+            
         </ul>
         <!-- </div> -->
         <nav class="pagination-container">
@@ -197,7 +237,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="js/script.js"></script>
     <script src="js/pagination.js"></script>
 </body>

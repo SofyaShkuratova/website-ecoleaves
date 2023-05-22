@@ -1,0 +1,29 @@
+@import "style.sass"
+@import "button.sass"
+
+.error-message
+    margin:  3rem 0
+    display: flex
+    width: 100%
+    flex-direction: column
+    gap: 2.6rem
+    align-items: center
+    transition: all 0.5s
+    transform: scale(1)
+
+    &:hover
+        img
+            transition: all 0.5s
+            transform: scale(1.2)
+
+    img
+        width: 26%
+        transition: all 0.5s
+        cursor: url('/img/cursor.svg'), auto
+h4
+   @include h-4()
+   width: 40%
+   text-align: center
+.button
+    @include btn-txt()
+    

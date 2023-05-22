@@ -220,42 +220,79 @@ footer {
 .catalog {
   display: flex;
   flex-wrap: wrap;
+  margin: 2rem 5rem;
   justify-content: center;
+  width: 100%;
+}
+.catalog .row:first-child {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 6rem;
+}
+.catalog .row:nth-child(2) {
+  display: none;
+}
+.catalog .col {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  margin-right: 4rem;
+}
+.catalog .sec {
+  margin-top: 12rem;
+}
+.catalog a {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.catalog .plant_card:hover img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .catalog li {
+  width: -moz-fit-content;
+  width: fit-content;
   display: flex;
+  width: 450px;
   flex-direction: column-reverse;
-  align-items: center;
-  width: 400px;
-  margin: 2rem;
-  background-color: #FFFEF9;
-  gap: 20px;
-  border: 2px solid #222;
-  transition: all 0.5s;
 }
 .catalog li .img_plant {
   width: 100%;
+  transition: all 0.9s;
 }
 .catalog li .img_plant img {
+  transition: all 0.9s;
   width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  filter: grayscale(100%);
 }
 .catalog li .title_plant {
-  display: flex;
-  text-align: center;
-  width: 100%;
-  justify-content: center;
-  padding: 1rem;
-  border-top: 2px solid #222;
-  font-size: 1.75rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  font-family: "Lora";
+  font-style: normal;
+  text-align: left;
+  line-height: 100%;
+  color: #222;
+  margin-bottom: 1rem;
+}
+.catalog li .pre-title {
+  font-size: 1.875rem;
   font-weight: 500;
   font-family: "Nunito";
-  font-style: italic;
+  font-style: normal;
   text-align: left;
-  line-height: 38px;
-  color: #222;
-  text-align: center;
+  line-height: 41px;
+  color: #025050;
 }
-.catalog li:hover {
-  box-shadow: 10px 10px 0px #bfb33b;
+.catalog li:hover img {
+  transition: all 0.5s;
+  transform: scale(0.95);
+  filter: grayscale(0%);
+}
+.catalog li:hover .img_plant {
   transition: all 0.5s;
 }

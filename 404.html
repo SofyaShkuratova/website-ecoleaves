@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/plants.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/pagination.css">
+    <link rel="stylesheet" href="css/404.css">
 
-    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
-    <title>Plant</title>
+    <title>404 страница</title>
 </head>
 <body>
     <header>
@@ -52,92 +50,15 @@
             </div>
         </nav>
     </header>
-    <section class="catalog_plant">
-        <div class="title_head">
-             <div class="head button">
-                Растения
-            </div>
-            <div class="sort">
-                <button class="sort_but">Популярные растения</button>
-                <button class="sort_but">От А до Я</button>
-                <button class="sort_but">По сложности ухода</button>
-            </div>
-        </div>
-        <div class="filter_menu">
-            <ul>
-                <li>Забота</li>
-                <li>Функции</li>
-                <li>Тип растения</li>
-                <li>Листья</li>
-            </ul>
-            
-            <input type="search" name="search" id="search" placeholder="Поиск ...">
-        </div>
-        <!-- <div class="catalog"> -->
-        <ul id="paginated-list" data-current-page="1" aria-live="polite" class="catalog">
-            <a href="moth-orchid.html">
-                <li class="plant_card">
-                    <div class="title_plant">Орхидея обычная</div>
-                    <div class="img_plant"><img src="img/plants/1.png" alt=""></div>
-                </li>
-            </a>
-            <a href="#">
-                <li class="plant_card">
-                    <div class="title_plant">Нервное растение</div>
-                    <div class="img_plant"><img src="img/plants/2.png" alt=""></div>
-                </li>
-            </a>
-            <a href="#">
-                <li class="plant_card">
-                    <div class="title_plant">Кротон</div>
-                    <div class="img_plant"><img src="img/plants/3.png" alt=""></div>
-                </li>
-            </a>
-            <li class="plant_card">
-                <div class="title_plant">Карандаш кактус</div>
-                <div class="img_plant"><img src="img/plants/4.png" alt=""></div>
-            </li>
-            <li class="plant_card">
-                <div class="title_plant">Хвост ослика</div>
-                <div class="img_plant"><img src="img/plants/5.png" alt=""></div>
-            </li>
-            <li class="plant_card">
-                <div class="title_plant">Райская птица</div>
-                <div class="img_plant"><img src="img/plants/6.png" alt=""></div>
-            </li>
-            <li class="plant_card">
-                <div class="title_plant">Строманте Триостар</div>
-                <div class="img_plant"><img src="img/plants/7.png" alt=""></div>
-            </li>
-            <li class="plant_card">
-                <div class="title_plant">Строманте Триостар</div>
-                <div class="img_plant"><img src="img/plants/7.png" alt=""></div>
-            </li>
-            <li class="plant_card">
-                <div class="title_plant">Строманте Триостар</div>
-                <div class="img_plant"><img src="img/plants/7.png" alt=""></div>
-            </li>
-            <li class="plant_card">
-                <div class="title_plant">Строманте Триостар</div>
-                <div class="img_plant"><img src="img/plants/7.png" alt=""></div>
-            </li>
-        </ul>
-        <!-- </div> -->
-        <nav class="pagination-container">
-            <button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page">
-              &lt;
+    <section class="error-message">
+        <img src="img/404.png" alt="">
+        <h4>Упс! Мы забыли полить водой эту страницу!</h4>
+        <a href="index.html">
+            <button class="button">
+                Главная страница
             </button>
-        
-            <div id="pagination-numbers">
-        
-            </div>
-        
-            <button class="pagination-button" id="next-button" aria-label="Next page" title="Next page">
-              &gt;
-            </button>
-        </nav>
+        </a>
     </section>
-    
     <footer>
         <div class="foot-block">
             <div class="child">
@@ -197,8 +118,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="js/script.js"></script>
-    <script src="js/pagination.js"></script>
 </body>
 </html>
