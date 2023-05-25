@@ -48,12 +48,14 @@ nav .nav-container .cont {
   gap: 20px;
   width: -moz-fit-content;
   width: fit-content;
+  transition: all 0.5s;
 }
 nav .nav-container .cont .child {
   display: flex;
   flex-direction: column;
   align-items: center;
   display: block;
+  transition: all 0.5s;
 }
 nav .nav-container .cont .child .txt {
   font-size: 1.25rem;
@@ -66,14 +68,17 @@ nav .nav-container .cont .child .txt {
 }
 nav .nav-container .icon {
   display: none;
+  transition: all 0.5s;
 }
 
 @media screen and (max-width: 600px) {
   nav .nav-container .cont {
     display: none;
+    transition: all 0.5s;
   }
   nav .nav-container .icon {
     display: block;
+    transition: all 0.5s;
   }
   nav div.nav-container {
     position: relative;
@@ -90,6 +95,7 @@ nav .nav-container .icon {
     position: absolute;
     display: flex;
     flex-direction: column;
+    transition: all 0.5s;
   }
 }
 a {

@@ -6,6 +6,7 @@
 
 body {
   background-color: #F9F5F1;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -23,7 +24,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: url("/img/cursor.svg"), auto;
+  cursor: url("../img/cursor.svg"), auto;
   width: 100%;
   height: -moz-max-content;
   height: max-content;

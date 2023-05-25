@@ -12,11 +12,11 @@ $begue-clr: #EEE5DB
         left: 50%
         transform: translateX(-50%)
 
-    .img_cont
+    .img_container
         width: 50%
-        z-index: -100
-        // display: flex
-        background-image: url("/img/plants/1.png")
+        height: 100vh
+        // z-index: -100
+        background-image: url("../img/plants/1.png")
         background-repeat: no-repeat
         background-size: contain
         background-color: $begue-clr
@@ -38,6 +38,109 @@ $begue-clr: #EEE5DB
                 @include txt-style-lora($clrtxtlora: $dark-green , $style-lora: normal, $wlora: 500) 
             div
                 width: 250px
+
+@media screen and (max-width:768px) 
+    .head_flower
+        flex-direction: column
+        align-items: center
+    .head_flower .button
+        top: 38%
+    .head_flower .img_cont
+        height: 100vh
+        width: 100%
+    .head_flower .text_cont
+        width: 100%
+
+
+    .about .more_about .inf_blocks
+        flex-direction: column
+    section.about div.more_about
+        padding: 0rem
+        margin: 1rem
+    
+    section.about .cont-about .full-cont
+        padding: 2rem
+        justify-content: center
+        gap: 2rem
+    section.about .cont-about .full-cont .childs .line
+        align-items: center
+        padding-bottom: 0rem
+        padding-top: 0rem 
+    section.about .cont-about .full-cont .childs .line p
+        @include h-3($h3fs: 1rem)
+    section.about .cont-about .full-cont .childs .line img
+        height: 0.5rem
+    section.about .cont-about .title-cont
+        font-size: 2rem
+        padding: 1rem 2rem
+
+@media screen and (max-width:425px) 
+    .head_flower
+        flex-direction: column
+        align-items: center
+    .head_flower .button
+        top: 45%
+    .head_flower .img_cont
+        height: 100vh
+        width: 100%
+        
+    .head_flower .text_cont .cont .thin
+        font-size: 1rem
+        line-height: 18px
+    .head_flower .text_cont .cont .bold
+        font-size: 1rem
+        line-height: 18px
+        width: 140px
+    section.about div.more_about
+        flex-direction: column
+        align-items: center
+        gap: 0
+
+
+    .about .more_about .inf_blocks
+        flex-direction: column
+    section.about div.more_about
+        padding: 0rem
+        margin: 1rem
+    
+    section.about .cont-about
+        margin: 1rem
+    section.about .cont-about .title-cont
+        font-size: 1.4rem
+        padding: 0.4rem 2rem
+    section.about .cont-about .full-cont
+        padding: 2rem
+        flex-direction: column
+        align-items: center
+        gap: 1rem
+    section.about .cont-about .full-cont .childs
+        width: 100%
+    section.about .cont-about .full-cont .img_div
+        width: 50%
+    section.about .cont-about .full-cont .childs .line
+        align-items: center
+        padding-bottom: 0rem
+        padding-top: 0rem 
+    section.about .cont-about .full-cont .childs .line p
+        @include h-3($h3fs: 1rem)
+    section.about .cont-about .full-cont .childs .line img
+        height: 0.5rem
+    section.about .full_image
+        height: fit-content
+
+
+    section.about .questions
+        margin:  1rem 1rem 3rem
+    section.about .questions .title_quest
+        padding: 1rem
+        top: -90px
+    section.about .questions .cont_questions .one_quest
+        gap: 1rem
+        padding: 1rem 0
+        align-items: center
+    section.about .questions .cont_questions .one_quest img
+        height:0.6rem
+
 
 .about
     display: flex
@@ -163,6 +266,6 @@ span
     font-size: 2rem
     color: $black
     border: none
-    background: none
+    background-color: none
     align-self: flex-end
 

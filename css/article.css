@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F9F5F1;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.header .txt-cont {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  margin: 0 4rem;
+}
+.header .txt-cont p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-family: "Lora";
+  font-style: normal;
+  text-align: left;
+  line-height: 26px;
+  color: #222;
+  color: #025050;
+  font-weight: 600;
+}
+.header .txt-cont h4 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  font-family: "Lora";
+  font-style: normal;
+  text-align: left;
+  line-height: 100%;
+  color: #222;
+  margin-bottom: 1rem;
+}
+.header .txt-cont .article {
+  font-size: 1.75rem;
+  font-weight: 500;
+  font-family: "Nunito";
+  font-style: italic;
+  text-align: left;
+  line-height: 38px;
+  color: #222;
+  text-align: center;
+  text-align: left;
+  padding: 1rem 0;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+.header .txt-cont .info {
+  display: flex;
+  gap: 5rem;
+}
+.header .txt-cont .col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.header .txt-cont .col .bold {
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-family: "Lora";
+  font-style: normal;
+  text-align: left;
+  line-height: 26px;
+  color: #222;
+  color: #025050;
+  font-weight: 600;
+}
+.header .txt-cont .col .thin {
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-family: "Lora";
+  font-style: normal;
+  text-align: left;
+  line-height: 26px;
+  color: #222;
+  font-weight: 400;
+  color: #025050;
+}
+.header .img-cont {
+  width: 50%;
+  background-image: url("../img/care/9.png");
+  background-position-x: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+}
+
+.title-section {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  margin: 4rem auto;
+}
+.title-section h3 {
+  font-size: 1.875rem;
+  font-weight: 500;
+  font-family: "Nunito";
+  font-style: normal;
+  text-align: left;
+  line-height: 41px;
+  color: #222;
+  margin-top: 4rem;
+}
+.title-section p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Nunito";
+  font-style: normal;
+  text-align: left;
+  line-height: 115%;
+  color: #222;
+  line-height: 30px;
+}
+.title-section .img {
+  margin: 2rem 0;
+  background-image: url("../img/care/11.png");
+  background-position-x: 50%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40rem;
+}
+
+@media screen and (max-width: 768px) {
+  .title-section {
+    width: 70%;
+  }
+  .header .txt-cont .article {
+    font-size: 1.25rem;
+    line-height: 28px;
+  }
+  section.header div.txt-cont .col .row div {
+    font-size: 1rem;
+  }
+  .header .txt-cont h4 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column-reverse;
+    height: 140vh;
+  }
+  .title-section {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .header .img-cont {
+    background-position-y: 0%;
+    background-position-x: 0%;
+    height: 90vh;
+    width: 100%;
+  }
+  .header .txt-cont {
+    width: 80%;
+    margin: 1rem auto;
+  }
+}
